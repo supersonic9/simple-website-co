@@ -1,0 +1,315 @@
+{
+  "designSystem": {
+    "name": "The Web Shed Design System",
+    "version": "1.0.0",
+    "description": "A soft, approachable small business website design system with rounded corners, muted colors, and gentle typography",
+
+    "colorPalette": {
+      "primary": {
+        "background": "#F5F1ED",
+        "description": "Warm cream/beige primary background"
+      },
+      "secondary": {
+        "cardBackground": "#FFFFFF",
+        "description": "Clean white for cards and overlays"
+      },
+      "accent": {
+        "blue": "#7BA7D9",
+        "green": "#8FA687",
+        "coral": "#E89B8B",
+        "yellow": "#F5D982",
+        "purple": "#B8A8D9",
+        "teal": "#A8D4C8",
+        "description": "Soft, muted accent colors for emotions and categories"
+      },
+      "text": {
+        "primary": "#2C2C2C",
+        "secondary": "#6B6B6B",
+        "tertiary": "#999999",
+        "onAccent": "#FFFFFF",
+        "description": "Hierarchy of text colors from dark to light"
+      }
+    },
+
+    "typography": {
+      "fontFamily": {
+        "primary": "SF Pro Display, -apple-system, system-ui, sans-serif",
+        "fallbacks": "Helvetica Neue, Arial, sans-serif"
+      },
+      "weights": {
+        "regular": 400,
+        "medium": 500,
+        "semibold": 600,
+        "bold": 700
+      },
+      "hierarchy": {
+        "heading1": {
+          "fontSize": "28px",
+          "fontWeight": 600,
+          "lineHeight": 1.2,
+          "usage": "Main page titles"
+        },
+        "heading2": {
+          "fontSize": "20px",
+          "fontWeight": 600,
+          "lineHeight": 1.3,
+          "usage": "Section headers"
+        },
+        "heading3": {
+          "fontSize": "18px",
+          "fontWeight": 500,
+          "lineHeight": 1.3,
+          "usage": "Card titles, labels"
+        },
+        "body": {
+          "fontSize": "16px",
+          "fontWeight": 400,
+          "lineHeight": 1.4,
+          "usage": "Main content text"
+        },
+        "caption": {
+          "fontSize": "14px",
+          "fontWeight": 400,
+          "lineHeight": 1.3,
+          "usage": "Supporting text, descriptions"
+        },
+        "small": {
+          "fontSize": "12px",
+          "fontWeight": 400,
+          "lineHeight": 1.2,
+          "usage": "Fine print, metadata"
+        }
+      },
+      "characteristics": {
+        "style": "Clean, humanistic sans-serif",
+        "mood": "Friendly, approachable, professional",
+        "readability": "High contrast, generous spacing"
+      }
+    },
+
+    "layout": {
+      "containerMaxWidth": "375px",
+      "padding": {
+        "page": "20px",
+        "card": "16px",
+        "section": "24px"
+      },
+      "margins": {
+        "small": "8px",
+        "medium": "16px",
+        "large": "24px",
+        "xlarge": "32px"
+      },
+      "grid": {
+        "columns": 12,
+        "gutter": "16px"
+      }
+    },
+
+    "components": {
+      "cards": {
+        "style": {
+          "borderRadius": "16px",
+          "backgroundColor": "#FFFFFF",
+          "boxShadow": "0 2px 8px rgba(0,0,0,0.06)",
+          "padding": "16px"
+        },
+        "variants": {
+          "elevated": {
+            "boxShadow": "0 4px 12px rgba(0,0,0,0.08)"
+          },
+          "flat": {
+            "boxShadow": "none",
+            "border": "1px solid #F0F0F0"
+          }
+        }
+      },
+
+      "buttons": {
+        "primary": {
+          "borderRadius": "12px",
+          "backgroundColor": "#2C2C2C",
+          "color": "#FFFFFF",
+          "fontSize": "16px",
+          "fontWeight": 500,
+          "padding": "12px 24px",
+          "minHeight": "48px"
+        },
+        "secondary": {
+          "borderRadius": "12px",
+          "backgroundColor": "transparent",
+          "border": "1px solid #E0E0E0",
+          "color": "#2C2C2C",
+          "fontSize": "16px",
+          "fontWeight": 500,
+          "padding": "12px 24px",
+          "minHeight": "48px"
+        }
+      },
+
+      "emotionBubbles": {
+        "style": {
+          "borderRadius": "50px",
+          "minWidth": "80px",
+          "height": "40px",
+          "fontSize": "14px",
+          "fontWeight": 500,
+          "display": "flex",
+          "alignItems": "center",
+          "justifyContent": "center",
+          "textAlign": "center"
+        },
+        "emotions": {
+          "gratitude": {
+            "backgroundColor": "#7BA7D9",
+            "color": "#FFFFFF"
+          },
+          "calmness": {
+            "backgroundColor": "#8FA687",
+            "color": "#FFFFFF"
+          },
+          "love": {
+            "backgroundColor": "#E89B8B",
+            "color": "#FFFFFF"
+          },
+          "happiness": {
+            "backgroundColor": "#F5D982",
+            "color": "#2C2C2C"
+          },
+          "sadness": {
+            "backgroundColor": "#D4C5E8",
+            "color": "#2C2C2C"
+          }
+        }
+      },
+
+      "progressIndicator": {
+        "style": {
+          "fontSize": "48px",
+          "fontWeight": 700,
+          "color": "#2C2C2C"
+        },
+        "supportingText": {
+          "fontSize": "14px",
+          "fontWeight": 400,
+          "color": "#6B6B6B"
+        }
+      },
+
+      "moodEmojis": {
+        "style": {
+          "size": "40px",
+          "borderRadius": "50%",
+          "backgroundColor": "#F8F8F8",
+          "padding": "8px",
+          "margin": "4px"
+        },
+        "emotions": ["😊", "😔", "😠", "😴", "😰", "😵"]
+      },
+
+      "categoryCards": {
+        "style": {
+          "borderRadius": "16px",
+          "padding": "16px",
+          "minHeight": "80px",
+          "display": "flex",
+          "alignItems": "center"
+        },
+        "variants": {
+          "diversity": {
+            "backgroundColor": "#F8E8E8",
+            "illustration": "diverse figures"
+          },
+          "mentalHealth": {
+            "backgroundColor": "#E8F4F0",
+            "illustration": "head with plants"
+          },
+          "selfDefense": {
+            "backgroundColor": "#E8F0FF",
+            "illustration": "protective stance figure"
+          }
+        }
+      }
+    },
+
+    "illustrations": {
+      "style": {
+        "type": "Minimalist line art with organic shapes",
+        "colors": "Soft pastels matching accent palette",
+        "characteristics": [
+          "Simple, clean lines",
+          "Human-centered imagery",
+          "Nature elements (plants, organic shapes)",
+          "Inclusive representation",
+          "Calming, non-threatening aesthetics"
+        ]
+      }
+    },
+
+    "dataVisualization": {
+      "bubbleChart": {
+        "style": "Organic, non-geometric bubble sizes",
+        "colors": "Uses accent color palette",
+        "typography": {
+          "fontSize": "14px",
+          "fontWeight": 500,
+          "color": "#FFFFFF"
+        }
+      }
+    },
+
+    "spacing": {
+      "system": "8px base unit",
+      "scale": [4, 8, 12, 16, 20, 24, 32, 40, 48, 64],
+      "usage": {
+        "4px": "Fine adjustments",
+        "8px": "Small gaps",
+        "16px": "Standard spacing",
+        "24px": "Section spacing",
+        "32px": "Large section breaks"
+      }
+    },
+
+    "designPrinciples": {
+      "accessibility": {
+        "colorContrast": "WCAG AA compliant",
+        "fontSize": "Minimum 14px for body text",
+        "touchTargets": "Minimum 44px for interactive elements"
+      },
+      "mood": {
+        "primary": "Calming and supportive",
+        "secondary": "Approachable and human",
+        "tertiary": "Professional yet warm"
+      },
+      "visualLanguage": {
+        "cornerRadius": "Consistently rounded (12px-16px)",
+        "shadows": "Subtle and soft",
+        "colors": "Muted, non-aggressive palette",
+        "whitespace": "Generous breathing room"
+      }
+    },
+
+    "responsiveness": {
+      "breakpoints": {
+        "mobile": "320px-767px",
+        "tablet": "768px-1023px",
+        "desktop": "1024px+"
+      },
+      "scalingStrategy": "Mobile-first with progressive enhancement"
+    },
+
+    "animationGuidelines": {
+      "timing": {
+        "fast": "200ms",
+        "normal": "300ms",
+        "slow": "500ms"
+      },
+      "easing": "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+      "principles": [
+        "Gentle transitions",
+        "Meaningful motion",
+        "Reduced motion respect"
+      ]
+    }
+  }
+}
