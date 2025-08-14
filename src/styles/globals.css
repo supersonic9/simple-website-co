@@ -1,0 +1,477 @@
+/* ==========================================================================
+   Global Styles & CSS Reset
+   The Web Shed Design System v1.0.0
+   ========================================================================== */
+
+/* Import design system variables */
+@import './variables.css';
+
+/* ==========================================================================
+   Modern CSS Reset
+   ========================================================================== */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ==========================================================================
+   Base Styles
+   ========================================================================== */
+
+/* Root element */
+:root {
+  /* Ensure proper font rendering */
+  font-family: var(--font-family-base);
+  font-size: 16px;
+  line-height: var(--line-height-relaxed);
+  color: var(--color-text-primary);
+  background-color: var(--color-background-primary);
+}
+
+/* HTML element */
+html {
+  /* Prevent horizontal scroll */
+  overflow-x: hidden;
+  /* Smooth scrolling */
+  scroll-behavior: smooth;
+}
+
+/* Body element */
+body {
+  /* Base typography */
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-body);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-relaxed);
+  color: var(--color-text-primary);
+  background-color: var(--color-background-primary);
+  
+  /* Prevent horizontal scroll */
+  overflow-x: hidden;
+  
+  /* Better text rendering */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+  /* Ensure proper word breaking */
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/* ==========================================================================
+   Typography Base Styles
+   ========================================================================== */
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family-base);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-tight);
+  color: var(--color-text-primary);
+  margin-bottom: var(--spacing-4);
+}
+
+h1 {
+  font-size: var(--font-size-heading1);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-tight);
+  margin-bottom: var(--spacing-6);
+}
+
+h2 {
+  font-size: var(--font-size-heading2);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-normal);
+  margin-bottom: var(--spacing-5);
+}
+
+h3 {
+  font-size: var(--font-size-heading3);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-normal);
+  margin-bottom: var(--spacing-4);
+}
+
+h4, h5, h6 {
+  font-size: var(--font-size-body);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-normal);
+  margin-bottom: var(--spacing-3);
+}
+
+/* Paragraphs */
+p {
+  font-size: var(--font-size-body);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-relaxed);
+  color: var(--color-text-primary);
+  margin-bottom: var(--spacing-4);
+}
+
+/* Links */
+a {
+  color: var(--color-accent-blue);
+  text-decoration: none;
+  transition: color var(--transition-fast) var(--easing-standard);
+}
+
+a:hover {
+  color: var(--color-text-primary);
+  text-decoration: underline;
+}
+
+a:focus {
+  outline: var(--focus-ring-width) solid var(--focus-ring-color);
+  outline-offset: var(--focus-ring-offset);
+  border-radius: var(--border-radius-small);
+}
+
+/* Lists */
+ul, ol {
+  margin-bottom: var(--spacing-4);
+  padding-left: var(--spacing-6);
+}
+
+li {
+  margin-bottom: var(--spacing-2);
+  line-height: var(--line-height-relaxed);
+}
+
+/* Blockquotes */
+blockquote {
+  margin: var(--spacing-6) 0;
+  padding: var(--spacing-4);
+  border-left: 4px solid var(--color-accent-blue);
+  background-color: var(--color-background-secondary);
+  border-radius: var(--border-radius-small);
+  font-style: italic;
+}
+
+/* Code */
+code {
+  font-family: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace;
+  font-size: 0.875em;
+  background-color: var(--color-background-secondary);
+  padding: var(--spacing-1) var(--spacing-2);
+  border-radius: var(--border-radius-small);
+  color: var(--color-text-primary);
+}
+
+pre {
+  background-color: var(--color-background-secondary);
+  padding: var(--spacing-4);
+  border-radius: var(--border-radius-medium);
+  overflow-x: auto;
+  margin-bottom: var(--spacing-4);
+}
+
+pre code {
+  background: none;
+  padding: 0;
+}
+
+/* ==========================================================================
+   Form Elements
+   ========================================================================== */
+
+/* Form containers */
+form {
+  margin-bottom: var(--spacing-6);
+}
+
+/* Form groups */
+.form-group {
+  margin-bottom: var(--spacing-4);
+}
+
+/* Labels */
+label {
+  display: block;
+  font-size: var(--font-size-caption);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text-primary);
+  margin-bottom: var(--spacing-2);
+}
+
+/* Inputs */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+input[type="url"],
+textarea,
+select {
+  width: 100%;
+  padding: var(--spacing-3) var(--spacing-4);
+  font-size: var(--font-size-body);
+  font-family: var(--font-family-base);
+  color: var(--color-text-primary);
+  background-color: var(--color-background-secondary);
+  border: 1px solid #E0E0E0;
+  border-radius: var(--border-radius-medium);
+  transition: border-color var(--transition-fast) var(--easing-standard),
+              box-shadow var(--transition-fast) var(--easing-standard);
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+input[type="url"]:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: var(--color-accent-blue);
+  box-shadow: 0 0 0 3px rgba(123, 167, 217, 0.1);
+}
+
+/* Buttons */
+button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--button-padding);
+  font-size: var(--button-font-size);
+  font-weight: var(--button-font-weight);
+  font-family: var(--font-family-base);
+  border: none;
+  border-radius: var(--button-border-radius);
+  background-color: var(--button-primary-background);
+  color: var(--button-primary-color);
+  cursor: pointer;
+  transition: all var(--transition-fast) var(--easing-standard);
+  min-height: var(--button-min-height);
+  text-decoration: none;
+}
+
+button:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-medium);
+}
+
+button:focus,
+input[type="button"]:focus,
+input[type="submit"]:focus,
+input[type="reset"]:focus {
+  outline: var(--focus-ring-width) solid var(--focus-ring-color);
+  outline-offset: var(--focus-ring-offset);
+}
+
+button:disabled,
+input[type="button"]:disabled,
+input[type="submit"]:disabled,
+input[type="reset"]:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* ==========================================================================
+   Layout Base Styles
+   ========================================================================== */
+
+/* Container */
+.container {
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  padding: 0 var(--container-padding);
+}
+
+/* Responsive container */
+@media (min-width: 768px) {
+  .container {
+    max-width: var(--container-max-width-tablet);
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: var(--container-max-width-desktop);
+  }
+}
+
+/* Section spacing */
+section {
+  padding: var(--spacing-section) 0;
+}
+
+/* ==========================================================================
+   Utility Classes
+   ========================================================================== */
+
+/* Screen reader only */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Visually hidden but accessible */
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+/* Skip to content link */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 6px;
+  background: var(--color-text-primary);
+  color: var(--color-white);
+  padding: 8px;
+  text-decoration: none;
+  border-radius: var(--border-radius-small);
+  z-index: var(--z-index-tooltip);
+}
+
+.skip-link:focus {
+  top: 6px;
+}
+
+/* ==========================================================================
+   Print Styles
+   ========================================================================== */
+
+@media print {
+  * {
+    background: transparent !important;
+    color: black !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+  
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+  
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+  
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+  
+  thead {
+    display: table-header-group;
+  }
+  
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+  
+  img {
+    max-width: 100% !important;
+  }
+  
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+} 
