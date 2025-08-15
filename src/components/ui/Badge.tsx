@@ -7,4 +7,4 @@ export const Badge: React.FC<BadgeProps> = ({ children, ...props }) => {
       {children}
     </span>
   );
-}; 
+};

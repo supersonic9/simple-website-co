@@ -1,6 +1,6 @@
 import React from 'react';
 import type { CardProps } from '@/types/components';
-import '../styles/utilities.css';
+import '../../styles/utilities.css';
 
 export const Card: React.FC<CardProps> = ({
   children,
@@ -147,4 +147,4 @@ export const Card: React.FC<CardProps> = ({
       )}
     </div>
   );
-}; 
+};

@@ -1,7 +1,7 @@
 import React from 'react';
 import type { GridProps, GridItemProps } from '@/types/components';
-import '../styles/utilities.css';
-import '../styles/grid.css';
+import '../../styles/utilities.css';
+import '../../styles/grid.css';
 
 export const Grid: React.FC<GridProps> = ({
   children,
@@ -45,10 +45,10 @@ export const Grid: React.FC<GridProps> = ({
   // Responsive column classes
   const getResponsiveColumns = () => {
     const classes = [];
-    
+
     // Default columns
     classes.push(`grid-cols-${columns}`);
-    
+
     // Responsive columns
     if (responsive) {
       if (responsive.mobile) {
@@ -61,7 +61,7 @@ export const Grid: React.FC<GridProps> = ({
         classes.push(`lg:grid-cols-${responsive.desktop}`);
       }
     }
-    
+
     return classes;
   };
 
@@ -114,15 +114,15 @@ export const GridItem: React.FC<GridItemProps> = ({
   // Responsive span classes
   const getResponsiveSpan = () => {
     const classes = [];
-    
+
     // Default span
     classes.push(`col-span-${span}`);
-    
+
     // Row span
     if (rowSpan > 1) {
       classes.push(`row-span-${rowSpan}`);
     }
-    
+
     // Responsive span
     if (responsive) {
       if (responsive.mobile) {
@@ -135,7 +135,7 @@ export const GridItem: React.FC<GridItemProps> = ({
         classes.push(`lg:col-span-${responsive.desktop}`);
       }
     }
-    
+
     return classes;
   };
 
@@ -153,4 +153,4 @@ export const GridItem: React.FC<GridItemProps> = ({
       {children}
     </div>
   );
-}; 
+};

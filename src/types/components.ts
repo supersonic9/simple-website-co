@@ -423,4 +423,4 @@ export type ClickHandler = (event: React.MouseEvent<HTMLElement>) => void;
 export type ChangeHandler = (event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => void;
 export type FocusHandler = (event: React.FocusEvent<HTMLElement>) => void;
 export type BlurHandler = (event: React.FocusEvent<HTMLElement>) => void;
-export type SubmitHandler = (event: React.FormEvent<HTMLFormElement>) => void; 
+export type SubmitHandler = (event: React.FormEvent<HTMLFormElement>) => void;

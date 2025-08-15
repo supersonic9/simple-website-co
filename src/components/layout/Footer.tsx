@@ -7,4 +7,4 @@ export const Footer: React.FC<BaseComponentProps> = ({ children }) => {
       {children}
     </footer>
   );
-}; 
+};

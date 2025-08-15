@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import { fileURLToPath, URL } from 'node:url';
+import { cssConfig } from './vite.css.config';
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -12,6 +13,16 @@ export default defineConfig({
     host: true,
     open: false,
     cors: true,
+    // Hot reload configuration
+    hmr: {
+      overlay: true,
+      port: 5173,
+    },
+    // Watch configuration for hot reload
+    watch: {
+      usePolling: false,
+      interval: 100,
+    },
   },
 
   // Build configuration
@@ -47,15 +58,14 @@ export default defineConfig({
   },
 
   // CSS configuration
-  css: {
-    postcss: './postcss.config.js',
-    devSourcemap: true,
-  },
+  css: cssConfig,
 
   // Optimize dependencies
   optimizeDeps: {
     include: ['react', 'react-dom'],
     exclude: [],
+    // Force dependency optimization
+    force: true,
   },
 
   // Preview configuration
@@ -63,4 +73,12 @@ export default defineConfig({
     port: 4173,
     host: true,
   },
+
+  // Development optimizations
+  define: {
+    __DEV__: true,
+  },
+
+  // Clear screen on restart
+  clearScreen: false,
 });

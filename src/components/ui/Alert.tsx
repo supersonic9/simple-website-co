@@ -7,4 +7,4 @@ export const Alert: React.FC<AlertProps> = ({ children, ...props }) => {
       {children}
     </div>
   );
-}; 
+};

@@ -11,4 +11,4 @@ export const Select: React.FC<SelectProps> = ({ name, options, ...props }) => {
       ))}
     </select>
   );
-}; 
+};

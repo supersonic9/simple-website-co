@@ -11,4 +11,4 @@ export const Navigation: React.FC<NavigationProps> = ({ items, ...props }) => {
       ))}
     </nav>
   );
-}; 
+};

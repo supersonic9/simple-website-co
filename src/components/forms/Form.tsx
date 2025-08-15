@@ -7,4 +7,4 @@ export const Form: React.FC<BaseComponentProps> = ({ children, ...props }) => {
       {children}
     </form>
   );
-}; 
+};

@@ -98,12 +98,34 @@
 .my-6 { margin-top: var(--spacing-6); margin-bottom: var(--spacing-6); }
 .my-8 { margin-top: var(--spacing-8); margin-bottom: var(--spacing-8); }
 .my-10 { margin-top: var(--spacing-10); margin-bottom: var(--spacing-10); }
+
+/* ==========================================================================
+   Layout Utilities
+   ========================================================================== */
+
+/* Centering Utilities */
+.mx-auto { margin-left: auto; margin-right: auto; }
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+
+/* Flexbox Utilities */
+.flex { display: flex; }
+.flex-col { flex-direction: column; }
+.flex-row { flex-direction: row; }
+.items-center { align-items: center; }
+.items-start { align-items: flex-start; }
+.items-end { align-items: flex-end; }
+.justify-center { justify-content: center; }
+.justify-start { justify-content: flex-start; }
+.justify-end { justify-content: flex-end; }
+.justify-between { justify-content: space-between; }
+.justify-around { justify-content: space-around; }
 .my-12 { margin-top: var(--spacing-12); margin-bottom: var(--spacing-12); }
 .my-16 { margin-top: var(--spacing-16); margin-bottom: var(--spacing-16); }
 
 /* Auto margins */
 .m-auto { margin: auto; }
-.mx-auto { margin-left: auto; margin-right: auto; }
 .my-auto { margin-top: auto; margin-bottom: auto; }
 
 /* Padding Utilities */

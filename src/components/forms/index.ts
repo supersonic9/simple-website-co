@@ -15,4 +15,4 @@ export type {
   TextareaProps,
   SelectProps,
   SelectOption,
-} from '@/types/components'; 
+} from '@/types/components';

@@ -1,8 +1,8 @@
 import React from 'react';
 import type { BaseComponentProps } from '@/types/components';
-import '../styles/utilities.css';
-import '../styles/grid.css';
-import '../styles/layout.css';
+import '../../styles/utilities.css';
+import '../../styles/grid.css';
+import '../../styles/layout.css';
 
 interface LayoutProps extends BaseComponentProps {
   /** Maximum width of the container */
@@ -68,7 +68,7 @@ export const Layout: React.FC<LayoutProps> = ({
     backgroundClasses[background],
     centered ? 'mx-auto' : '',
     className,
-  ].join(' ');
+  ].join(' ').replace(/\s+/g, ' ').trim();
 
   return (
     <div className={layoutClasses} {...props}>
@@ -130,7 +130,7 @@ export const Container: React.FC<ContainerProps> = ({
     responsivePaddingClasses[padding],
     centered ? 'mx-auto' : '',
     className,
-  ].join(' ');
+  ].join(' ').replace(/\s+/g, ' ').trim();
 
   return (
     <div className={containerClasses} {...props}>
@@ -195,12 +195,12 @@ export const Wrapper: React.FC<WrapperProps> = ({
     responsivePaddingClasses[padding],
     backgroundClasses[background],
     className,
-  ].join(' ');
+  ].join(' ').replace(/\s+/g, ' ').trim();
 
   return (
     <section className={wrapperClasses} {...props}>
       {constrained ? (
-        <Container size={containerSize}>
+        <Container size={containerSize} centered={true}>
           {children}
         </Container>
       ) : (
@@ -208,4 +208,4 @@ export const Wrapper: React.FC<WrapperProps> = ({
       )}
     </section>
   );
-}; 
+};

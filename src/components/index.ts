@@ -13,4 +13,4 @@ export * from './layout';
 export * from './forms';
 
 // Export all component types
-export type * from '@/types/components'; 
+export type * from '@/types/components';

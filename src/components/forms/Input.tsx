@@ -5,4 +5,4 @@ export const Input: React.FC<InputProps> = ({ name, ...props }) => {
   return (
     <input name={name} {...props} />
   );
-}; 
+};

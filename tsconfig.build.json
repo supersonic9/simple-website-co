@@ -1,0 +1,31 @@
+{
+  "extends": "./tsconfig.app.json",
+  "compilerOptions": {
+    "noEmit": false,
+    "allowImportingTsExtensions": false,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "incremental": true,
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.build.tsbuildinfo",
+    
+    /* Build Optimizations */
+    "removeComments": false,
+    "preserveConstEnums": true,
+    "importHelpers": true,
+    
+    /* Production Type Checking */
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["src", "src/**/*"],
+  "exclude": [
+    "node_modules", 
+    "dist", 
+    "build", 
+    "**/*.test.ts", 
+    "**/*.test.tsx",
+    "**/*.spec.ts",
+    "**/*.spec.tsx"
+  ]
+} 

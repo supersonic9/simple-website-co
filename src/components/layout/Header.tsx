@@ -7,4 +7,4 @@ export const Header: React.FC<BaseComponentProps> = ({ children }) => {
       {children}
     </header>
   );
-}; 
+};

@@ -7,7 +7,7 @@
 export { Button } from './Button';
 export { Card } from './Card';
 export { Section } from './Section';
-export { Container } from './Container';
+
 export { Grid, GridItem } from './Grid';
 export { Badge } from './Badge';
 export { Alert } from './Alert';
@@ -18,10 +18,10 @@ export type {
   ButtonProps,
   CardProps,
   SectionProps,
-  ContainerProps,
+
   GridProps,
   GridItemProps,
   BadgeProps,
   AlertProps,
   ImageProps,
-} from '@/types/components'; 
+} from '@/types/components';

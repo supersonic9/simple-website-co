@@ -5,4 +5,4 @@ export const Textarea: React.FC<TextareaProps> = ({ name, ...props }) => {
   return (
     <textarea name={name} {...props} />
   );
-}; 
+};

@@ -1,0 +1,187 @@
+/* ==========================================================================
+   CSS Isolation System
+   The Web Shed Design System v1.0.0
+   ========================================================================== */
+
+/* Import design system variables */
+@import './variables.css';
+
+/* ==========================================================================
+   Component Isolation Utilities
+   ========================================================================== */
+
+/* Base isolation class */
+.css-isolated {
+  /* Ensure component styles don't leak */
+  contain: style;
+  /* Prevent inheritance of unwanted styles */
+  all: unset;
+  /* Reset to design system defaults */
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-body);
+  line-height: var(--line-height-normal);
+  color: var(--color-text-primary);
+}
+
+/* Component root isolation */
+.component-root {
+  /* Create a new stacking context */
+  isolation: isolate;
+  /* Ensure proper positioning context */
+  position: relative;
+  /* Reset box model */
+  box-sizing: border-box;
+  /* Prevent margin collapse */
+  display: flow-root;
+}
+
+/* ==========================================================================
+   Scoped Component Classes
+   ========================================================================== */
+
+/* Button component isolation */
+.button__root {
+  /* Button-specific isolation */
+  contain: layout style;
+  /* Prevent style inheritance */
+  all: unset;
+  /* Apply design system defaults */
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-body);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-normal);
+  /* Ensure proper sizing */
+  min-height: var(--button-min-height);
+  /* Prevent text selection */
+  user-select: none;
+  /* Ensure proper cursor */
+  cursor: pointer;
+}
+
+/* Card component isolation */
+.card__root {
+  /* Card-specific isolation */
+  contain: layout style;
+  /* Reset to design system defaults */
+  background: var(--card-background);
+  border-radius: var(--card-border-radius);
+  padding: var(--card-padding);
+  box-shadow: var(--card-shadow);
+  border: var(--card-border);
+  /* Ensure proper positioning */
+  position: relative;
+  /* Prevent margin collapse */
+  display: flow-root;
+}
+
+/* Section component isolation */
+.section__root {
+  /* Section-specific isolation */
+  contain: layout style;
+  /* Reset to design system defaults */
+  width: 100%;
+  /* Ensure proper spacing */
+  box-sizing: border-box;
+  /* Prevent margin collapse */
+  display: flow-root;
+}
+
+/* Grid component isolation */
+.grid__root {
+  /* Grid-specific isolation */
+  contain: layout style;
+  /* Reset to design system defaults */
+  display: grid;
+  width: 100%;
+  /* Ensure proper grid behavior */
+  grid-template-columns: repeat(var(--grid-columns), 1fr);
+  gap: var(--grid-gutter);
+  /* Prevent margin collapse */
+  box-sizing: border-box;
+}
+
+/* ==========================================================================
+   State Isolation
+   ========================================================================== */
+
+/* Active state isolation */
+[data-state="active"] {
+  /* Ensure active state styles don't leak */
+  contain: style;
+}
+
+/* Disabled state isolation */
+[data-state="disabled"] {
+  /* Ensure disabled state styles don't leak */
+  contain: style;
+  /* Prevent interaction */
+  pointer-events: none;
+  /* Visual indication */
+  opacity: 0.6;
+}
+
+/* Loading state isolation */
+[data-state="loading"] {
+  /* Ensure loading state styles don't leak */
+  contain: style;
+}
+
+/* ==========================================================================
+   Responsive Isolation
+   ========================================================================== */
+
+/* Mobile-first responsive isolation */
+@media (min-width: 768px) {
+  .component-root {
+    /* Tablet-specific isolation */
+    contain: layout style;
+  }
+}
+
+@media (min-width: 1024px) {
+  .component-root {
+    /* Desktop-specific isolation */
+    contain: layout style;
+  }
+}
+
+/* ==========================================================================
+   Focus Isolation
+   ========================================================================== */
+
+/* Focus ring isolation */
+.focus-visible {
+  /* Ensure focus styles don't leak */
+  contain: style;
+  /* Design system focus ring */
+  outline: 2px solid var(--focus-ring-color);
+  outline-offset: var(--focus-ring-offset);
+}
+
+/* ==========================================================================
+   Animation Isolation
+   ========================================================================== */
+
+/* Respect reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .component-root * {
+    /* Disable animations for accessibility */
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* ==========================================================================
+   Print Isolation
+   ========================================================================== */
+
+@media print {
+  .component-root {
+    /* Ensure print styles don't leak */
+    contain: style;
+    /* Print-specific resets */
+    box-shadow: none !important;
+    border: 1px solid #000 !important;
+  }
+} 

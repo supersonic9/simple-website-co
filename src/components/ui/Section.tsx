@@ -1,6 +1,6 @@
 import React from 'react';
 import type { SectionProps } from '@/types/components';
-import '../styles/utilities.css';
+import '../../styles/utilities.css';
 
 export const Section: React.FC<SectionProps> = ({
   children,
@@ -114,4 +114,4 @@ export const Section: React.FC<SectionProps> = ({
       </div>
     </section>
   );
-}; 
+};

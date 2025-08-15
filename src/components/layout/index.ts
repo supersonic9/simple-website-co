@@ -4,13 +4,10 @@
    ========================================================================== */
 
 // Export all layout components
-export { Header } from './Header';
-export { Footer } from './Footer';
-export { Navigation } from './Navigation';
-export { Layout } from './Layout';
+export { Layout, Container, Wrapper } from './Layout';
 
 // Export component types
 export type {
   NavigationProps,
   NavigationItem,
-} from '@/types/components'; 
+} from '@/types/components';

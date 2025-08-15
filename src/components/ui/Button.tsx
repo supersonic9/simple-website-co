@@ -1,6 +1,6 @@
 import React from 'react';
 import type { ButtonProps } from '@/types/components';
-import '../styles/utilities.css';
+import '../../styles/utilities.css';
 
 export const Button: React.FC<ButtonProps> = ({
   children,
@@ -130,4 +130,4 @@ export const Button: React.FC<ButtonProps> = ({
       {!loading && iconAfter && <span className="ml-2">{iconAfter}</span>}
     </button>
   );
-}; 
+};
