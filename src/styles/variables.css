@@ -1,0 +1,20 @@
+:root {
+  /* Colors */
+  --color-bg: #F5F1ED;
+  --color-text: #2C2C2C;
+  --color-accent: #7BA7D9;
+
+  /* Typography */
+  --font-heading: SF Pro Display, -apple-system, system-ui, sans-serif;
+  --font-body: -apple-system, system-ui, sans-serif;
+
+  /* Spacing */
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 32px;
+
+  /* Radius & Shadow */
+  --radius-card: 16px;
+  --shadow-sm: 0 2px 8px rgba(0,0,0,0.06);
+} 

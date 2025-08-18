@@ -27,10 +27,10 @@ Building a clean, responsive website for Simple Web Co - a web development busin
 - [x] Test in browser
 
 #### 1.2 Basic Styling
-- [ ] Set up responsive CSS with mobile-first approach
-- [ ] Choose 2-3 colors: background, text, accent
-- [ ] Pick 2 fonts: one for headings, one for body text
-- [ ] Create basic layout structure
+- [x] Set up responsive CSS with mobile-first approach
+- [x] Choose 2-3 colors: background, text, accent
+- [x] Pick 2 fonts: one for headings, one for body text
+- [x] Create basic layout structure
 
 **Success Criteria**: Basic page loads and looks decent on mobile and desktop
 

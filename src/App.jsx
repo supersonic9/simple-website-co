@@ -5,10 +5,14 @@ function App() {
   return (
     <div className="app">
       <header className="app-header">
-        <h1>Simple Web Co</h1>
+        <div className="container">
+          <h1>Simple Web Co</h1>
+        </div>
       </header>
       <main className="app-main">
-        <p>Website coming soon...</p>
+        <div className="container">
+          <p>Website coming soon...</p>
+        </div>
       </main>
     </div>
   );
