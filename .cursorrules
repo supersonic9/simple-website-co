@@ -1,0 +1,5 @@
+- Tech Stack - React (vite), CSS + HTML, Node.js
+- Use `npm` when installing new packages
+- Styling should be done via CSS and in a seperate stylesheet relative to each component or file 
+- Use a functional programming style, particularly with react components 
+- Never try to start the app itself (I have it running in a separate terminal)

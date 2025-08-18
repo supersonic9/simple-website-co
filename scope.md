@@ -1,375 +1,166 @@
 # Simple Web Co Website Development Plan
 
 ## Project Overview
-Building a modern, responsive website for Simple Web Co - a web development business serving small businesses in Porto, Portugal. The site will demonstrate professional web development capabilities while maintaining a playful, approachable feel.
 
-## Design System Alignment
-Following the established design system with:
-- **Colors**: Warm cream background (#F5F1ED), white cards, muted accent palette
-- **Typography**: SF Pro Display system with clear hierarchy (h1: 28px, h2: 20px, h3: 18px, body: 16px)
-- **Layout**: 8px base spacing system, 12-column grid, 16px gutters
-- **Components**: Rounded corners (12-16px), subtle shadows, gentle animations (200-300ms)
-- **Responsiveness**: Mobile-first with breakpoints at 768px and 1024px
+Building a clean, responsive website for Simple Web Co - a web development business serving small businesses in Porto, Portugal. The site will be simple, fast, and professional.
+
+## Technical Approach
+
+**Keep it simple:**
+- React with Vite for fast development
+- Minimal dependencies
+- Fast loading and easy to maintain
+- Mobile-first responsive design
 
 ## Development Phases
 
-### Phase 1: Project Foundation & Setup (Day 1)
-**Duration**: 4-6 hours
-**Deliverables**: Project structure, design tokens, basic styling system
+### Phase 1: Basic Setup (Day 1)
 
-#### 1.1 Project Initialization
-- [ ] Initialize React + Vite project with TypeScript template
-- [ ] Install dependencies (TypeScript, ESLint, Prettier, PostCSS, Autoprefixer)
-- [ ] Configure TypeScript with strict mode and proper React types
-- [ ] Set up ESLint with TypeScript rules and React hooks
-- [ ] Configure build tools and linting rules
-- [ ] Set up Git repository with initial commit
+**Duration**: 2-3 hours
+**Deliverables**: Project structure and basic styling
 
-#### 1.2 Design System Implementation
-- [ ] Create `src/styles/variables.css` with all design tokens
-- [ ] Implement `src/styles/globals.css` with base styles and CSS reset
-- [ ] Create `src/styles/typography.css` with font hierarchy
-- [ ] Set up `src/styles/utilities.css` with spacing, layout, and animation utilities
-- [ ] Verify all color combinations meet WCAG AA contrast requirements
+#### 1.1 Project Setup
+- [x] Create project folder structure
+- [x] Set up basic HTML file
+- [x] Create CSS file for styling
+- [x] Add simple JavaScript file
+- [x] Test in browser
 
-#### 1.3 Component Architecture
-- [ ] Create component folder structure with TypeScript interfaces
-- [ ] Build shared UI components (`Button`, `Card`, `Section`) with proper TypeScript props
-- [ ] Define component prop interfaces and type definitions
-- [ ] Implement responsive grid system using CSS Grid
-- [ ] Create base layout wrapper with proper container constraints
+#### 1.2 Basic Styling
+- [ ] Set up responsive CSS with mobile-first approach
+- [ ] Choose 2-3 colors: background, text, accent
+- [ ] Pick 2 fonts: one for headings, one for body text
+- [ ] Create basic layout structure
 
-#### 1.4 Development Environment
-- [ ] Configure hot reload and development server
-- [ ] Set up TypeScript compilation and type checking
-- [ ] Configure component CSS isolation
-- [ ] Test responsive breakpoints
-- [ ] Verify design token accessibility
-- [ ] Ensure TypeScript strict mode is working correctly
-
-**Success Criteria**: 
-- All design tokens properly implemented and accessible
-- Responsive grid system working across breakpoints
-- Base components render correctly with design system styling
-- TypeScript compilation and type checking working without errors
-- Development environment fully functional
+**Success Criteria**: Basic page loads and looks decent on mobile and desktop
 
 ---
 
-### Phase 2: Core Navigation & Hero (Day 1-2)
-**Duration**: 6-8 hours
-**Deliverables**: Functional navigation and hero section
+### Phase 2: Navigation & Hero (Day 1-2)
 
-#### 2.1 Navigation Bar Component
-- [ ] Build `NavBar` component with responsive behavior and TypeScript interfaces
-- [ ] Define navigation item types and component props
-- [ ] Implement sticky positioning with scroll effects
-- [ ] Create mobile hamburger menu with slide-down animation
-- [ ] Add smooth scroll navigation to page sections
-- [ ] Implement active link highlighting using IntersectionObserver
-- [ ] Ensure keyboard navigation and focus management
-- [ ] Add logo placeholder (text-based using design system typography)
+**Duration**: 3-4 hours
+**Deliverables**: Working navigation and hero section
+
+#### 2.1 Navigation
+- [ ] Simple horizontal navigation bar
+- [ ] Mobile hamburger menu
+- [ ] Smooth scroll to page sections
+- [ ] Logo/company name
 
 #### 2.2 Hero Section
-- [ ] Build `Hero` component with full-bleed layout
-- [ ] Create placeholder hero image/illustration using design system aesthetic
-- [ ] Implement responsive text layout (centered on mobile, split on desktop)
-- [ ] Add primary CTA button ("Contact Us") with proper styling
-- [ ] Include secondary CTA ("Our Work") linking to services section
-- [ ] Add gentle entrance animations respecting reduced motion preferences
-- [ ] Ensure hero content is above the fold on all devices
+- [ ] Main headline and subheadline
+- [ ] Call-to-action button
+- [ ] Simple background (color or basic image)
+- [ ] Responsive text sizing
 
-#### 2.3 Navigation Integration
-- [ ] Connect navigation links to page sections
-- [ ] Implement smooth scrolling with proper offset for sticky nav
-- [ ] Add URL hash updates for deep linking
-- [ ] Test navigation across all breakpoints
-
-**Success Criteria**:
-- Navigation sticky and responsive across all devices
-- Hero section loads quickly and displays properly on all screen sizes
-- Smooth scrolling navigation works correctly
-- All interactive elements are keyboard accessible
-- Design system colors and typography properly applied
+**Success Criteria**: Navigation works on all devices, hero section looks good
 
 ---
 
-### Phase 3: Services & About Sections (Day 2)
-**Duration**: 6-8 hours
-**Deliverables**: What We Do and About Us sections
+### Phase 3: Content Sections (Day 2)
 
-#### 3.1 What We Do Section
-- [ ] Build `WhatWeDo` component with responsive grid layout
-- [ ] Create 3 service cards using design system card styling
-- [ ] Implement responsive behavior (1-col mobile, 2-col tablet, 3-col desktop)
-- [ ] Add placeholder content for services:
-  - "Simple Sites" - Basic business websites
-  - "Ecommerce Starter" - Online store setup
-  - "Local SEO & Care" - Search optimization and maintenance
-- [ ] Apply accent colors strategically (blue for primary, coral/teal for secondary)
-- [ ] Ensure cards have proper hover states and focus indicators
+**Duration**: 4-5 hours
+**Deliverables**: Services and About sections
 
-#### 3.2 About Us Section
-- [ ] Build `About` component with company story and owner profile
-- [ ] Create company description focusing on Porto small business focus
-- [ ] Add owner profile block with placeholder photo and bio
-- [ ] Implement responsive layout (stacked on mobile, side-by-side on desktop)
-- [ ] Use design system typography hierarchy for content structure
-- [ ] Add subtle animations for content reveal
+#### 3.1 Services Section
+- [ ] 3 service cards in a grid
+- [ ] Simple icons or placeholders
+- [ ] Brief descriptions
+- [ ] Responsive layout (1 column mobile, 3 columns desktop)
 
-#### 3.3 Section Integration
-- [ ] Connect sections with proper spacing using design system tokens
-- [ ] Implement section transitions and animations
-- [ ] Ensure proper semantic HTML structure
-- [ ] Test responsive behavior across all breakpoints
+#### 3.2 About Section
+- [ ] Company description
+- [ ] Owner bio
+- [ ] Simple layout (stacked on mobile, side-by-side on desktop)
 
-**Success Criteria**:
-- Services section displays properly in all grid configurations
-- About section content is readable and well-structured
-- All sections maintain consistent spacing and typography
-- Responsive behavior works smoothly across devices
-- Design system styling consistently applied
+**Success Criteria**: Content is readable and well-organized on all devices
 
 ---
 
-### Phase 4: Interactive Components (Day 3)
-**Duration**: 8-10 hours
-**Deliverables**: FAQ accordion and contact form
+### Phase 4: Contact & Footer (Day 3)
 
-#### 4.1 FAQ Accordion
-- [ ] Build `Faq` component with WAI-ARIA compliant accordion and TypeScript interfaces
-- [ ] Define FAQ item types and accordion state management
-- [ ] Implement single-expand behavior with smooth animations
-- [ ] Create 5-6 placeholder FAQ items:
-  - How long does a project take?
-  - How much does a project cost?
-  - What do I need to provide?
-  - What businesses do we typically work with?
-  - Are there any ongoing costs?
-  - Do you provide training and support?
-- [ ] Add keyboard navigation (arrow keys, Enter, Space)
-- [ ] Implement proper ARIA attributes (`aria-expanded`, `aria-controls`)
-- [ ] Ensure animations respect reduced motion preferences
-- [ ] Test accessibility with screen readers
+**Duration**: 3-4 hours
+**Deliverables**: Contact form and footer
 
-#### 4.2 Contact Form
-- [ ] Build `Contact` component with form and contact details and TypeScript interfaces
-- [ ] Define form field types, validation rules, and form state types
-- [ ] Create responsive two-column layout (form + details on desktop, stacked on mobile)
-- [ ] Implement form fields with proper validation:
-  - Name (required, min 2 characters)
-  - Email (required, valid email format)
-  - Phone (optional, basic format validation)
-  - Website (optional, URL validation)
-  - Additional Info (textarea, optional)
-- [ ] Add real-time validation with clear error messages
-- [ ] Implement form state management (loading, success, error) with proper TypeScript types
-- [ ] Create contact details section with placeholder phone/email
-- [ ] Add form submission handling (disabled until email service configured)
-- [ ] Ensure all form elements are properly labeled and accessible
+#### 4.1 Contact Form
+- [ ] Simple form with name, email, message
+- [ ] Basic validation
+- [ ] Contact information display
+- [ ] Responsive layout
 
-#### 4.3 Form Validation & UX
-- [ ] Implement inline validation with clear error states
-- [ ] Add success/error feedback messages
-- [ ] Ensure form is keyboard navigable
-- [ ] Test form behavior across all devices and browsers
-- [ ] Verify accessibility compliance
+#### 4.2 Footer
+- [ ] Company info
+- [ ] Social links (if any)
+- [ ] Copyright notice
 
-**Success Criteria**:
-- FAQ accordion works smoothly with proper ARIA implementation
-- Contact form validates correctly and provides clear feedback
-- All interactive elements are keyboard accessible
-- Form submission flow is ready for email service integration
-- Components maintain design system consistency
+**Success Criteria**: Form works, page looks complete
 
 ---
 
-### Phase 5: Testimonials Carousel (Day 4)
-**Duration**: 6-8 hours
-**Deliverables**: Functional testimonials carousel with placeholder data
+### Phase 5: Polish & Deploy (Day 3-4)
 
-#### 5.1 Testimonials Component
-- [ ] Build `Testimonials` component with horizontal carousel and TypeScript interfaces
-- [ ] Define testimonial item types and carousel state management
-- [ ] Create 3-4 placeholder testimonials with realistic content:
-  - Local restaurant owner testimonial
-  - Boutique shop owner testimonial
-  - Service business owner testimonial
-  - Ecommerce business owner testimonial
-- [ ] Implement responsive carousel behavior:
-  - Touch/swipe on mobile devices
-  - Click navigation on desktop
-  - Keyboard arrow key navigation
-- [ ] Add navigation controls (prev/next buttons)
-- [ ] Implement smooth scrolling with snap-to-card behavior
+**Duration**: 2-3 hours
+**Deliverables**: Final touches and deployment
 
-#### 5.2 Carousel Functionality
-- [ ] Add lazy loading for offscreen testimonials
-- [ ] Implement infinite scroll or loop behavior
-- [ ] Add accessibility features (ARIA labels, keyboard navigation)
-- [ ] Ensure smooth performance on all devices
-- [ ] Test touch gestures and mouse interactions
+#### 5.1 Final Polish
+- [ ] Test on different devices
+- [ ] Check loading speed
+- [ ] Fix any obvious issues
+- [ ] Add meta tags for SEO
 
-#### 5.3 Testimonial Cards
-- [ ] Design testimonial cards using design system styling
-- [ ] Include placeholder business logos (SVG placeholders)
-- [ ] Add quote text, attribution (name + business), and optional rating
-- [ ] Ensure cards are properly sized and responsive
-- [ ] Apply consistent spacing and typography
+#### 5.2 Deploy
+- [ ] Upload to web hosting
+- [ ] Test live site
+- [ ] Set up domain (when ready)
 
-**Success Criteria**:
-- Carousel functions smoothly on all devices
-- Touch/swipe gestures work correctly on mobile
-- Navigation controls are accessible and functional
-- Testimonial cards display consistently across breakpoints
-- Performance remains smooth during carousel interactions
+**Success Criteria**: Site is live and working properly
 
 ---
 
-### Phase 6: Polish & Optimization (Day 5)
-**Duration**: 6-8 hours
-**Deliverables**: Final polish, accessibility, performance optimization
+## Technical Details
 
-#### 6.1 Accessibility Audit
-- [ ] Test all interactive elements with keyboard navigation
-- [ ] Verify color contrast meets WCAG AA standards
-- [ ] Test with screen readers (NVDA, VoiceOver)
-- [ ] Ensure proper focus management throughout the site
-- [ ] Add skip-to-content link and other accessibility enhancements
-- [ ] Verify ARIA implementation is correct
-
-#### 6.2 Performance Optimization
-- [ ] Optimize images and assets
-- [ ] Implement lazy loading for offscreen content
-- [ ] Minimize CSS and JavaScript bundles
-- [ ] Add performance monitoring and metrics
-- [ ] Test Core Web Vitals (LCP, FID, CLS)
-- [ ] Ensure Lighthouse scores are 90+ across all categories
-
-#### 6.3 Responsive Testing
-- [ ] Test across multiple devices and screen sizes
-- [ ] Verify touch interactions on mobile devices
-- [ ] Test navigation behavior on all breakpoints
-- [ ] Ensure consistent experience across browsers
-- [ ] Validate responsive images and layouts
-
-#### 6.4 SEO & Meta
-- [ ] Add proper meta tags and descriptions
-- [ ] Implement Open Graph and Twitter Card meta
-- [ ] Add structured data (JSON-LD) for local business
-- [ ] Ensure proper heading hierarchy
-- [ ] Add sitemap and robots.txt
-
-**Success Criteria**:
-- Site passes accessibility audit with no critical issues
-- Performance metrics meet modern web standards
-- Responsive behavior works consistently across all devices
-- SEO implementation is complete and optimized
-- All sections maintain design system consistency
-
----
-
-### Phase 7: Deployment & Launch Preparation (Day 5-6)
-**Duration**: 2-4 hours
-**Deliverables**: Deployed site ready for content updates
-
-#### 7.1 Build & Deploy
-- [ ] Create production build
-- [ ] Deploy to staging environment (Vercel/Netlify)
-- [ ] Test deployed site functionality
-- [ ] Configure custom domain (when available)
-- [ ] Set up analytics and monitoring
-
-#### 7.2 Content Integration Preparation
-- [ ] Document content update process
-- [ ] Create content management guidelines
-- [ ] Prepare for real assets integration (logo, photos, testimonials)
-- [ ] Document form submission setup for email service
-- [ ] Create maintenance and update procedures
-
-#### 7.3 Final Testing
-- [ ] End-to-end testing of all user flows
-- [ ] Cross-browser compatibility testing
-- [ ] Mobile device testing
-- [ ] Performance testing on various network conditions
-- [ ] Security and privacy review
-
-**Success Criteria**:
-- Site is deployed and accessible
-- All functionality works correctly in production
-- Site is ready for real content integration
-- Performance and accessibility standards are maintained
-- Documentation is complete for future updates
-
----
-
-## Technical Specifications
-
-### Development Environment
-- **Framework**: React 18+ with Vite
-- **Language**: TypeScript 5+ with strict configuration
-- **Styling**: Plain CSS with PostCSS and Autoprefixer
-- **Build Tool**: Vite with TypeScript compilation and optimized production builds
-- **Linting**: ESLint + Prettier + TypeScript ESLint for code quality
-- **Type Checking**: TypeScript compiler with strict mode enabled
-- **Version Control**: Git with conventional commits
+### What We're Using
+- **React**: Component-based development with Vite
+- **Vite**: Fast build tool and dev server
+- **CSS**: Component-scoped styling, media queries for responsive design
+- **Images**: Optimized JPG/PNG, consider WebP for modern browsers
 
 ### Browser Support
-- **Modern Browsers**: Chrome 90+, Firefox 88+, Safari 14+, Edge 90+
-- **Mobile**: iOS Safari 14+, Chrome Mobile 90+
-- **Fallbacks**: Graceful degradation for older browsers
-- **TypeScript**: Compiles to ES2020 for broad browser compatibility
+- Modern browsers (Chrome, Firefox, Safari, Edge)
+- Mobile browsers (iOS Safari, Chrome Mobile)
+- Graceful fallbacks for older browsers
 
-### Performance Targets
-- **Lighthouse Scores**: 90+ across Performance, Accessibility, Best Practices, SEO
-- **Core Web Vitals**: LCP < 2.5s, FID < 100ms, CLS < 0.1
-- **Load Time**: < 3 seconds on 3G connection
-- **Bundle Size**: < 500KB gzipped (excluding images)
+### Performance Goals
+- Load in under 3 seconds
+- Work well on mobile devices
+- Easy to navigate and read
 
-### Accessibility Standards
-- **WCAG Compliance**: AA level minimum
-- **Keyboard Navigation**: Full keyboard accessibility
-- **Screen Reader**: Compatible with major screen readers
-- **Color Contrast**: 4.5:1 minimum for normal text, 3:1 for large text
-- **Focus Management**: Visible focus indicators and logical tab order
+## Content
 
-## Content Placeholders
-
-### Hero Section
+### Hero
 - **Headline**: "We build websites that small businesses love"
 - **Subheadline**: "Professional web development for Porto's growing businesses"
-- **CTA Primary**: "Contact Us"
-- **CTA Secondary**: "Our Work"
+- **Button**: "Contact Us"
 
 ### Services
-- **Simple Sites**: "Clean, professional websites that convert visitors into customers"
-- **Ecommerce Starter**: "Get your products online with our easy-to-use store solutions"
-- **Local SEO & Care**: "Improve your search rankings and keep your site running smoothly"
+- **Simple Sites**: Basic business websites
+- **Ecommerce**: Online stores
+- **SEO & Care**: Search optimization and maintenance
 
-### About Us
-- **Company Story**: "Simple Web Co was founded to help Porto's small businesses establish a strong online presence. We believe every business deserves a website that's both beautiful and effective."
-- **Owner Bio**: "Founded by [Name], a web developer passionate about helping local businesses grow through technology."
+### About
+- Company story and mission
+- Owner background
 
-### Testimonials
-- **Restaurant Owner**: "Simple Web Co transformed our online presence. Our bookings increased by 40% in the first month!"
-- **Boutique Owner**: "Professional, responsive, and delivered exactly what we needed. Highly recommend!"
-- **Service Business**: "They made the whole process simple and stress-free. Our new website looks amazing!"
-
-## Future Enhancements (Post-Launch)
-- **Multilingual Support**: EN/PT language toggle with TypeScript i18n types
-- **Real Content Integration**: Logo, photos, actual testimonials
-- **Form Submission**: Email service integration with proper TypeScript interfaces
-- **Analytics**: Conversion tracking and user behavior analysis
-- **Content Management**: CMS integration for easy updates
-- **Performance Monitoring**: Ongoing performance tracking and optimization
-- **Type Safety**: Enhanced TypeScript types for API responses and external data
+### Contact
+- Simple contact form
+- Phone and email
 
 ## Success Metrics
-- **Technical**: Lighthouse scores 90+, Core Web Vitals compliance
-- **Accessibility**: WCAG AA compliance, screen reader compatibility
-- **Responsiveness**: Consistent experience across all device types
-- **Performance**: Fast loading times on all connection speeds
-- **User Experience**: Intuitive navigation and clear information architecture
-- **Business Impact**: Professional appearance that builds client confidence
 
-This development plan provides a structured approach to building a high-quality website that demonstrates Simple Web Co's capabilities while maintaining the playful, approachable brand personality. Each phase builds upon the previous one, ensuring a solid foundation and consistent quality throughout the development process.
+- **Simple**: Easy to understand and navigate
+- **Fast**: Loads quickly on all devices
+- **Professional**: Looks trustworthy and competent
+- **Mobile-friendly**: Works great on phones and tablets
+- **Maintainable**: Easy to update content
+
+This simplified approach focuses on building a website that does exactly what it needs to do - showcase Simple Web Co's services and make it easy for potential clients to get in touch - without unnecessary complexity.
