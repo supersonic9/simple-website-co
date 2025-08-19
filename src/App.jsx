@@ -1,16 +1,13 @@
 import React from 'react';
 import NavBar from './components/NavBar';
+import Hero from './components/Hero';
 import './App.css';
 
 function App() {
   return (
     <div className="app">
       <NavBar />
-      <header className="app-header">
-        <div className="container">
-          <h1>Simple Web Co</h1>
-        </div>
-      </header>
+      <Hero />
       <main className="app-main">
         <div className="container">
           <p>Website coming soon...</p>

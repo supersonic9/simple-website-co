@@ -48,10 +48,14 @@ Building a clean, responsive website for Simple Web Co - a web development busin
 - [x] Logo/company name
 
 #### 2.2 Hero Section
-- [ ] Main headline and subheadline
-- [ ] Call-to-action button
-- [ ] Simple background (color or basic image)
-- [ ] Responsive text sizing
+- [x] Main headline and subheadline
+- [x] Call-to-action button
+- [x] Simple background (color or basic image)
+- [x] Responsive text sizing
+- [ ] Hero image being used 
+- [ ] Colours and styling 
+- [ ] Breakpoints 
+
 
 **Success Criteria**: Navigation works on all devices, hero section looks good
 
@@ -109,6 +113,8 @@ Building a clean, responsive website for Simple Web Co - a web development busin
 - [ ] Add meta tags for SEO
 - [ ] background hover effect on hamburger menu logo
 - [ ] Logo/company name
+- [ ] Update copy / headings etc
+- [ ] Update images being used 
 
 #### 5.2 Deploy
 - [ ] Upload to web hosting
