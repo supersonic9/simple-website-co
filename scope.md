@@ -42,10 +42,10 @@ Building a clean, responsive website for Simple Web Co - a web development busin
 **Deliverables**: Working navigation and hero section
 
 #### 2.1 Navigation
-- [ ] Simple horizontal navigation bar
-- [ ] Mobile hamburger menu
+- [x] Simple horizontal navigation bar
+- [x] Mobile hamburger menu
 - [ ] Smooth scroll to page sections
-- [ ] Logo/company name
+- [x] Logo/company name
 
 #### 2.2 Hero Section
 - [ ] Main headline and subheadline
@@ -107,6 +107,8 @@ Building a clean, responsive website for Simple Web Co - a web development busin
 - [ ] Check loading speed
 - [ ] Fix any obvious issues
 - [ ] Add meta tags for SEO
+- [ ] background hover effect on hamburger menu logo
+- [ ] Logo/company name
 
 #### 5.2 Deploy
 - [ ] Upload to web hosting
