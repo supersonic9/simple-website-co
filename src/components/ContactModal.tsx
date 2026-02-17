@@ -1,16 +1,27 @@
 import React, { useState, useEffect } from 'react';
 import './ContactModal.css';
 
-function ContactModal({ isOpen, onClose }) {
+interface ContactModalProps {
+  isOpen: boolean;
+  onClose: () => void;
+}
+
+interface FormErrors {
+  name?: string;
+  email?: string;
+  message?: string;
+}
+
+function ContactModal({ isOpen, onClose }: ContactModalProps) {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
-  const [errors, setErrors] = useState({});
+  const [errors, setErrors] = useState<FormErrors>({});
 
   useEffect(() => {
     if (!isOpen) return;
 
-    function handleKeyDown(e) {
+    function handleKeyDown(e: KeyboardEvent) {
       if (e.key === 'Escape') onClose();
     }
 
@@ -26,7 +37,7 @@ function ContactModal({ isOpen, onClose }) {
   if (!isOpen) return null;
 
   function validate() {
-    const newErrors = {};
+    const newErrors: FormErrors = {};
     if (!name.trim()) newErrors.name = 'Name is required';
     if (!email.trim()) {
       newErrors.email = 'Email is required';
@@ -37,7 +48,7 @@ function ContactModal({ isOpen, onClose }) {
     return newErrors;
   }
 
-  function handleSubmit(e) {
+  function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
     const newErrors = validate();
     setErrors(newErrors);
@@ -56,7 +67,7 @@ function ContactModal({ isOpen, onClose }) {
     setErrors({});
   }
 
-  function handleOverlayClick(e) {
+  function handleOverlayClick(e: React.MouseEvent) {
     if (e.target === e.currentTarget) onClose();
   }
 

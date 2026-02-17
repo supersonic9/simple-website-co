@@ -6,17 +6,17 @@ Marketing website for Simple Web Co. Single-page React site — no routing, no b
 
 ## Stack
 
-React 19 + Vite 7, plain CSS (no CSS-in-JS, no Tailwind), no TypeScript. Mobile-first responsive (breakpoints: 320px / 768px / 1024px).
+React 19 + Vite 7 + TypeScript (strict mode), plain CSS (no CSS-in-JS, no Tailwind). Mobile-first responsive (breakpoints: 320px / 768px / 1024px).
 
 ## CSS Architecture
 
-Global styles imported in `src/main.jsx` in this order:
+Global styles imported in `src/main.tsx` in this order:
 1. `src/styles/variables.css` — CSS custom properties
 2. `src/styles/typography.css` — Font styles and headings
 3. `src/styles/layout.css` — Container and grid utilities
 4. `src/index.css` — Global resets/base styles
 
-Component styles live in paired `.css` files alongside their `.jsx` files in `src/components/` (e.g. `Hero.jsx` + `Hero.css`). `App.css` is imported in `App.jsx` separately from the global chain.
+Component styles live in paired `.css` files alongside their `.tsx` files in `src/components/` (e.g. `Hero.tsx` + `Hero.css`). `App.css` is imported in `App.tsx` separately from the global chain.
 
 ## Design System
 
@@ -38,4 +38,4 @@ Public assets in `/public/`: `hero1.png`, `logo.png`. `index.html` still has def
 
 ## Lint
 
-ESLint `varsIgnorePattern: '^[A-Z_]'` — unused vars starting with uppercase or underscore are allowed.
+ESLint with `typescript-eslint`. `varsIgnorePattern: '^[A-Z_]'` — unused vars starting with uppercase or underscore are allowed.

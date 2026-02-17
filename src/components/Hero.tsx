@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { scrollToSection } from '../utils/scrollToSection';
 import ContactModal from './ContactModal';
 import './Hero.css';
