@@ -1,14 +1,8 @@
 import React from 'react';
+import { scrollToSection } from '../utils/scrollToSection';
 import './Hero.css';
 
 function Hero() {
-  const scrollToSection = (sectionId) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
   return (
     <section className="hero">
       <div className="container">
@@ -19,13 +13,13 @@ function Hero() {
               Professional web development for Porto's growing businesses
             </p>
             <div className="hero-cta">
-              <button 
+              <button
                 className="cta-primary"
                 onClick={() => scrollToSection('contact')}
               >
                 Contact Us
               </button>
-              <button 
+              <button
                 className="cta-secondary"
                 onClick={() => scrollToSection('what-we-do')}
               >
@@ -42,4 +36,4 @@ function Hero() {
   );
 }
 
-export default Hero; 
+export default Hero;

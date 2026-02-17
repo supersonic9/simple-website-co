@@ -2,7 +2,10 @@
   /* Colors */
   --color-bg: #F5F1ED;
   --color-text: #2C2C2C;
+  --color-text-secondary: #6B6B6B;
   --color-accent: #7BA7D9;
+  --color-accent-teal: #A8D4C8;
+  --color-on-accent: #FFFFFF;
 
   /* Typography */
   --font-heading: SF Pro Display, -apple-system, system-ui, sans-serif;

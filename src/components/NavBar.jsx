@@ -17,7 +17,7 @@ function NavBar() {
       <div className="container">
         <div className="nav-content">
           <div className="nav-logo">
-            {/* <img src="/logo.png" alt="Simple Web Co Logo" className="logo-image" /> */}
+            <img src="/logo.png" alt="Simple Web Co Logo" className="logo-image" />
             <h2>Simple Web Co</h2>
           </div>
           
