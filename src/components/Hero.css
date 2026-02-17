@@ -1,12 +1,12 @@
 .hero {
-  min-height: 75vh;
+  min-height: auto;
   background-color: var(--color-bg);
   background-image:
     radial-gradient(circle at 25% 25%, rgba(123, 167, 217, 0.15) 0%, transparent 50%),
     radial-gradient(circle at 75% 75%, rgba(168, 212, 200, 0.15) 0%, transparent 50%);
   display: flex;
   align-items: center;
-  padding: 40px 0;
+  padding: 64px 0;
 }
 
 .hero-content {
@@ -30,7 +30,7 @@
 }
 
 .hero-subtitle {
-  margin: 0 0 var(--space-4) 0;
+  margin: 0 0 var(--space-3) 0;
   color: var(--color-text-secondary);
   font-size: 18px;
   line-height: 1.5;
@@ -47,13 +47,13 @@
   background-color: var(--color-accent);
   color: var(--color-on-accent);
   border: none;
-  padding: var(--space-2) var(--space-4);
+  padding: 12px 24px;
   border-radius: 12px;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.2s ease;
-  min-height: 56px;
+  min-height: 48px;
 }
 
 .cta-primary:hover {
@@ -65,13 +65,13 @@
   background-color: var(--color-accent-teal);
   color: var(--color-text);
   border: none;
-  padding: var(--space-2) var(--space-4);
+  padding: 12px 24px;
   border-radius: 12px;
   font-size: 16px;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.2s ease;
-  min-height: 56px;
+  min-height: 48px;
 }
 
 .cta-secondary:hover {
@@ -87,7 +87,7 @@
 }
 
 .hero-img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
   border-radius: var(--radius-card);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
@@ -95,9 +95,13 @@
 
 /* Desktop Layout */
 @media (min-width: 1024px) {
+  .hero {
+    padding: 80px 0;
+  }
+
   .hero-content {
     grid-template-columns: 1fr 1fr;
-    gap: 60px;
+    gap: 40px;
   }
 
   .hero-text {
@@ -107,6 +111,11 @@
 
   .hero-image {
     order: 2;
+  }
+
+  .hero-img {
+    max-height: 360px;
+    object-fit: cover;
   }
 
   .hero-cta {
