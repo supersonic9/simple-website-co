@@ -17,7 +17,11 @@
   --space-3: 24px;
   --space-4: 32px;
 
+  /* Card */
+  --color-card-bg: #FFFFFF;
+
   /* Radius & Shadow */
   --radius-card: 16px;
   --shadow-sm: 0 2px 8px rgba(0,0,0,0.06);
+  --shadow-elevated: 0 4px 12px rgba(0,0,0,0.08);
 } 

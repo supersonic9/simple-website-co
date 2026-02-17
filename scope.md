@@ -52,9 +52,9 @@ Building a clean, responsive website for Simple Web Co - a web development busin
 - [x] Call-to-action button
 - [x] Simple background (color or basic image)
 - [x] Responsive text sizing
-- [ ] Hero image being used 
-- [ ] Colours and styling 
-- [ ] Breakpoints 
+- [x] Hero image being used 
+- [x] Colours and styling 
+- [x] Breakpoints 
 
 
 **Success Criteria**: Navigation works on all devices, hero section looks good
@@ -87,10 +87,9 @@ Building a clean, responsive website for Simple Web Co - a web development busin
 **Deliverables**: Contact form and footer
 
 #### 4.1 Contact Form
-- [ ] Simple form with name, email, message
-- [ ] Basic validation
-- [ ] Contact information display
-- [ ] Responsive layout
+- [x] Simple form with name, email, message
+- [x] Basic validation
+- [x] Responsive layout
 
 #### 4.2 Footer
 - [ ] Company info
