@@ -36,6 +36,12 @@ Key tokens: background `#F5F1ED`, text `#2C2C2C`, accent `#7BA7D9`, border-radiu
 
 Public assets in `/public/`: `hero1.png`, `logo.png`. `index.html` still has default Vite title and favicon — needs updating.
 
+## Testing
+
+**Unit tests:** Vitest + React Testing Library + jest-dom. Config lives in the `test` block of `vite.config.ts`, setup file at `src/test/setup.ts`. Test files are co-located with source (e.g. `ContactModal.test.tsx` next to `ContactModal.tsx`), except utility tests in `src/utils/`. Run with `npm test` (watch mode) or `npx vitest run` (single run).
+
+**Acceptance tests:** Playwright (Chromium only). Config at `playwright.config.ts`, specs in `e2e/`. Automatically starts the Vite dev server. Run with `npm run test:acceptance`.
+
 ## Lint
 
 ESLint with `typescript-eslint`. `varsIgnorePattern: '^[A-Z_]'` — unused vars starting with uppercase or underscore are allowed.
