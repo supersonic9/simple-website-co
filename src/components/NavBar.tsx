@@ -1,5 +1,6 @@
-import { useState } from 'react';
 import './NavBar.css';
+
+import { useState } from 'react';
 
 function NavBar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -20,7 +21,7 @@ function NavBar() {
             <img src="/logo.png" alt="Simple Web Co Logo" className="logo-image" />
             <h2>Simple Web Co</h2>
           </div>
-          
+
           {/* Desktop Navigation */}
           <ul className="nav-links desktop-nav">
             <li><a href="#what-we-do">What We Do</a></li>
@@ -30,7 +31,7 @@ function NavBar() {
           </ul>
 
           {/* Mobile Menu Button */}
-          <button 
+          <button
             className="mobile-menu-toggle"
             onClick={toggleMobileMenu}
             aria-label="Toggle mobile menu"
@@ -53,4 +54,4 @@ function NavBar() {
   );
 }
 
-export default NavBar; 
+export default NavBar;

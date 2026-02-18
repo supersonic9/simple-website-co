@@ -1,5 +1,7 @@
-import React, { useState, useEffect } from 'react';
 import './ContactModal.css';
+
+import type { FormEvent, MouseEvent } from 'react';
+import { useEffect, useState } from 'react';
 
 interface ContactModalProps {
   isOpen: boolean;
@@ -48,7 +50,7 @@ function ContactModal({ isOpen, onClose }: ContactModalProps) {
     return newErrors;
   }
 
-  function handleSubmit(e: React.FormEvent) {
+  function handleSubmit(e: FormEvent) {
     e.preventDefault();
     const newErrors = validate();
     setErrors(newErrors);
@@ -67,7 +69,7 @@ function ContactModal({ isOpen, onClose }: ContactModalProps) {
     setErrors({});
   }
 
-  function handleOverlayClick(e: React.MouseEvent) {
+  function handleOverlayClick(e: MouseEvent) {
     if (e.target === e.currentTarget) onClose();
   }
 

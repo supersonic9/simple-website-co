@@ -1,7 +1,9 @@
+import './Hero.css';
+
 import { useState } from 'react';
+
 import { scrollToSection } from '../utils/scrollToSection';
 import ContactModal from './ContactModal';
-import './Hero.css';
 
 function Hero() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -16,6 +18,7 @@ function Hero() {
               Professional web development for Porto's growing businesses
             </p>
             <div className="hero-cta">
+
               <button
                 className="cta-primary"
                 onClick={() => setIsModalOpen(true)}
