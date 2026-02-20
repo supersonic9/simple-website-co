@@ -2,7 +2,11 @@ import './NavBar.css';
 
 import { useState } from 'react';
 
-function NavBar() {
+interface NavBarProps {
+  onContactClick?: () => void;
+}
+
+function NavBar({ onContactClick }: NavBarProps) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const toggleMobileMenu = () => {
@@ -11,6 +15,21 @@ function NavBar() {
 
   const closeMobileMenu = () => {
     setIsMobileMenuOpen(false);
+  };
+
+  const handleContactClick = (e: React.MouseEvent) => {
+    if (onContactClick) {
+      e.preventDefault();
+      onContactClick();
+    }
+  };
+
+  const handleMobileContactClick = (e: React.MouseEvent) => {
+    closeMobileMenu();
+    if (onContactClick) {
+      e.preventDefault();
+      onContactClick();
+    }
   };
 
   return (
@@ -25,9 +44,9 @@ function NavBar() {
           {/* Desktop Navigation */}
           <ul className="nav-links desktop-nav">
             <li><a href="#what-we-do">What We Do</a></li>
-            <li><a href="#faqs">FAQ's</a></li>
-            <li><a href="#contact">Contact Us</a></li>
             <li><a href="#about">About Us</a></li>
+            <li><a href="#faqs">FAQ's</a></li>
+            <li><a href="#contact" onClick={handleContactClick}>Contact Us</a></li>
           </ul>
 
           {/* Mobile Menu Button */}
@@ -44,9 +63,9 @@ function NavBar() {
         <div className={`mobile-nav ${isMobileMenuOpen ? 'open' : ''}`}>
           <ul className="mobile-nav-links">
             <li><a href="#what-we-do" onClick={closeMobileMenu}>What We Do</a></li>
-            <li><a href="#faqs" onClick={closeMobileMenu}>FAQ's</a></li>
-            <li><a href="#contact" onClick={closeMobileMenu}>Contact Us</a></li>
             <li><a href="#about" onClick={closeMobileMenu}>About Us</a></li>
+            <li><a href="#faqs" onClick={closeMobileMenu}>FAQ's</a></li>
+            <li><a href="#contact" onClick={handleMobileContactClick}>Contact Us</a></li>
           </ul>
         </div>
       </div>
