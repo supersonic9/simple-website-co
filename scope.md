@@ -67,15 +67,15 @@ Building a clean, responsive website for Simple Web Co - a web development busin
 **Deliverables**: Services and About sections
 
 #### 3.1 Services Section
-- [ ] 3 service cards in a grid
-- [ ] Simple icons or placeholders
-- [ ] Brief descriptions
-- [ ] Responsive layout (1 column mobile, 3 columns desktop)
+- [x] 3 service cards in a grid
+- [x] Simple icons or placeholders
+- [x] Brief descriptions
+- [x] Responsive layout (1 column mobile, 3 columns desktop)
 
 #### 3.2 About Section
-- [ ] Company description
-- [ ] Owner bio
-- [ ] Simple layout (stacked on mobile, side-by-side on desktop)
+- [x] Company description
+- [x] Owner bio
+- [x] Simple layout (stacked on mobile, side-by-side on desktop)
 
 **Success Criteria**: Content is readable and well-organized on all devices
 
