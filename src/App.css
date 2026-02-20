@@ -3,12 +3,3 @@
   background-color: var(--color-bg);
   font-family: var(--font-body);
 }
-
-.app-main {
-  padding: 40px 0;
-  text-align: center;
-}
-
-.app-main p {
-  color: #6B6B6B;
-}
